@@ -1,0 +1,28 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:#fdeef5;
+
+    min-height:100vh;
+
+    background-image:
+        radial-gradient(circle at top,#ffd9eb 0%,#fdeef5 45%,#ffffff 100%);
+}
+
+img{
+  max-width:100%;
+}
+
+a{
+  text-decoration:none;
+}
+
+button{
+  text-transform:none !important;
+}
