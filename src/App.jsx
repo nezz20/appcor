@@ -15,7 +15,7 @@ import {
   Grid
 } from "@mui/material";
 
-const API_URL = "http://localhost:3001";
+const API_URL = "https://testapp-cor-1-c9nd.onrender.com";
 export default function App() {
   const [idEdit, setIdEdit] = useState(null);
 
