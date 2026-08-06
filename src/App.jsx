@@ -54,8 +54,10 @@ export default function App() {
   formData.append("grams", grams);
   formData.append("oxVolume", oxVolume);
   formData.append("notes", notes);
-  formData.append("serviceDate", serviceDate);
-
+formData.append(
+  "serviceDate",
+  serviceDate ? serviceDate.split("T")[0] : ""
+);
   if (photo) {
     formData.append("photo", photo);
   }
@@ -118,8 +120,11 @@ export default function App() {
     setGrams(c.grams);
     setOxVolume(c.ox_volume);
     setNotes(c.notes);
-    setServiceDate(c.service_date);
-  }
+setServiceDate(
+  c.service_date
+    ? c.service_date.split("T")[0]
+    : ""
+);  }
 
   return (
     <Box
