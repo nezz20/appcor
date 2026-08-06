@@ -304,8 +304,7 @@ setServiceDate(
             <CardContent>
               {c.photo && (
                 <img
-                  src={`${API_URL}/uploads/${c.photo}`}
-                  alt=""
+src={c.photo}                  alt=""
                   style={{
                     width: "100%",
                     maxHeight: 300,
